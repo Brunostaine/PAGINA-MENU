@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.header {
+    background-color: rgb(26, 22, 22);
+    height: 15vh;
+}
+
+.logo {
+    text-align: center;
+    text-transform: uppercase;
+    color: blanchedalmond;
+}
+
+.menu-container {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: -100%;
+    height: 0;
+    background-color: rgba(36, 41, 92, 0.5);
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
+    
+    
+}
+
+#nav.active .menu-container {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+    transform: translateX(100%);
+}
+
+#btn {
+    display: flex;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: blanchedalmond;
+    gap: .5rem;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+
+.hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+    
+}
+
+.hamburguer::after, .hamburguer::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+
+#nav.active .hamburguer {
+    border-top-color: transparent;
+}
+
+#nav.active .hamburguer::before {
+    transform: rotate(135deg);
+}
+
+#nav.active .hamburguer::after {
+    transform: rotate(-136deg);
+    top: -7px;
+}
+
+li {
+    margin: 16px;
+    text-align: center;
+    font-size: 1.5rem;
+    list-style: none;
+    color: whitesmoke;
+}
+
+.link {
+    margin-left: 0;
+    
+}
+
+
+
+
