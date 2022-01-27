@@ -45,3 +45,49 @@ li {
     background-size: contain; 
     background-color: rgba(0, 0, 0, .5);  
 }
+
+#header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+}
+
+#hamburguer::after, #hamburguer::before {
+    content: "";
+    background: currentColor;
+    height: 2px;
+    width: 20px;
+    margin-top: 5px;
+    display: block;
+}
+
+#botao {
+    display: flex;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: blanchedalmond;
+    gap: .5rem;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+
+#nav.active #hamburguer {
+    border-top-color: transparent;
+}
+
+#nav.active #hamburguer::before {
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburguer::after {
+    transform: rotate(-136deg);
+    top: -7px;
+}
