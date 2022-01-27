@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+li {
+    list-style: none;
+}
+.principal {
+    width: 100%;
+    height: 100vh;
+}
+
+.conteudo {
+    background-image: url("menu-3/capa.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;   
+}
