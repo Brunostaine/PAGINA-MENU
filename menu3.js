@@ -1,8 +1,8 @@
-const botao = document.getElementById("botao")
+const btn = document.getElementById('btn');
 
-function toogleMenu () {
-    const nav = document.getElementById("nav")
-    nav.classList.toogle("active")
+function toggleMenu() {
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
 }
 
-botao.addEventListener("click", toogleMenu)
+btn.addEventListener('click', toggleMenu);
